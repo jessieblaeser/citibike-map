@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Map 2020</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Citibike usage rose nearly 32 percent when comparing Sept. 2020 to Sept. 2021</h1>
+        <h3>🚲 Taking a look at changes in usage in start and end stations 🚲</h3>
+    </div>
+    <hr>    
+
+    <div class="section">
+        <p>Citibike users in New York are on the move, performing roughly 800,000 more trips in Sept. 2021 from Sept. 2020 — a roughly 32 percent increase — according to Citibike data.
+        </p>
+        <p>Between Sept. 2020 and 2021, roughly 400 new stations came online, which helped aid ridership in northern Manhattan and the Bronx. Adding more stations also created less demand for each individual bike; the median trips started per station in Sept. 2020 was 1,457. By Sept. 2021, that number dropped to 1,136, a 22 percent decrease. </p>
+        <p>✨<mark>Click</mark>✨ on the maps below to read more about the usage of each indivudal station.</p>
+        <h2>Where New Yorkers began their rides</h2>
+        <p>Despite the new stations, Citibike usage remained centered in lower Manhattan, which some of the top-five most popular stations for beginning and ending rides staying the same across both months. 
+        </p>
+       
+    <div class="row-container">
+        <div class="column-container">
+            <h3>Sept. 2020</h3>
+            <p>Top five stations for beginning rides:
+                <ol>
+                    <li>West 21 St & 6 Ave: 13,875 rides started</li>
+                    <li>West St & Chambers St: 13,225 rides started</li>
+                    <li>12 Ave & West 40 St: 12,869 rides started</li>
+                    <li>1 Ave & East 68 St: 12,816 rides started</li>
+                    <li>E 17 St & Broadway: 11,264 rides started</li>
+                </ol>
+            </p>
+            <div id='map'>
+            </div>
+            
+        </div>
+        <div class="column-container">
+            <h3>Sept. 2021</h3>
+            <p>Top five stations for beginning rides:
+                <ol>
+                    <li>W 21 St & 6 Ave: 14,435 rides started</li>
+                    <li>E 17 St & Broadway: 14,065 rides started</li>
+                    <li>Broadway & E 14 St: 13,155 rides started</li>
+                    <li>Cleveland Pl & Spring St: 12,987 rides started</li>
+                    <li>W 20 St & 10 Ave: 12,918 rides started</li>
+                </ol>
+            </p>
+            <div id='map2'>
+            </div>
+        </div>
+    </div>
+    <p>While it seems like Citibike users are still starting their trips in lower Manhattan,  data shows they are more likely to end their trips across the five boroughs, when comparing stations where trips were completed between Sept. 2020 and 2021.</p> 
+<h2>Where New Yorkers finished their rides</h2>
+
+    <p>The median number of trips ended per station also dropped drastically, from roughly 1,435 trips completed per station to 431, a nearly 70 percent decrease.
+</p>
+<p>Citibike data shows an increase of over 50 percent in stations used to end trips between the two months, which could account for such a drastic decrease in median trips ended per station. 
+</p>
+<strong><mark>NOTE TO JUAN AND MICHAEL:</mark> I’m not sure how this could be possible — that there’s a drastic difference between the number of new START station ID’s across Sept. 2020 and 2021 and the number of new END station ID’s. Wouldn’t this number be the same?  
+</strong>
+    <div class="row-container">
+        <div class="column-container">
+            <h3>Sept. 2020</h3>
+            <p>Top five stations for ending rides:
+                <ol>
+                    <li>West 21 St & 6 Ave: 13,967 rides ended</li>
+                    <li>West St & Chambers St: 13,783 rides ended</li>
+                    <li>12 Ave & W 40 St: 12,922 rides ended</li>
+                    <li>1 Ave & E 68 St: 12,689 rides ended</li>
+                    <li>E 17 St & Broadway: 11,446 rides ended</li>
+                </ol>
+            </p>
+         
+            <div id='map3'>
+            </div>
+        </div>
+        <div class="column-container">
+            <h3>Sept. 2021</h3>
+            <p>Top five stations for ending rides:
+                <ol>
+                    <li>West 21 St & 6 Ave: 14,420 rides ended</li>
+                    <li>East 17 St & Broadway: 14,092 rides ended</li>
+                    <li>Cleveland Pl & Spring St: 13,114 rides ended</li>
+                    <li>Broadway & E 14 St: 12,918 rides ended</li>
+                    <li>West 20 St & 10 Ave: 12,912 rides ended</li>
+                </ol>
+
+            <div id='map4'>
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr>
+    <!-- <div id='map'>
+    <!-- <div id='title' class="title">
+        <h1>title</h1>
+        <p>words
+            <br>
+            <br>
+            Data source:
+            <br>
+            <p><a href='https://s3.amazonaws.com/tripdata/index.html'>Citibike monthly data</a></p>
+
+        <hr> -->
+        <!-- <div id="turnstile-legend" class="legend2">
+        </div>
+        <div id="income-legend" class="legend">
+            <h4>Percent of votes recieved by each county's winning candidate</h4>
+            <div><span style="background-color: #6193c7"></span>Joe Biden</div>
+            <div><span style="background-color: #cf635d"></span>Donald Trump</div>
+        </div>
+
+        
+        </div> -->
+    <!-- </div>
+</div>
+    <div id='map2'> -->
+    <!-- <div id='title' class="title">
+        <h1>title</h1>
+            <br>
+            <br>
+            Data source:
+            <br>
+           
+        <hr> -->
+        <!-- <div id="turnstile-legend" class="legend2">
+            <h4>Number of votes cast for each county's winning candidate</h4>
+            <p><em>Click on cicles for detailed election information</em></p>
+            <div><span style="background-color: #a4a4a4"></span>&#8594;<span style="background-color: #a4a4a4; height:20px; width:20px"></span> < 50% decrease to > 90% decrease</div>
+        </div>
+        <div id="income-legend" class="legend">
+            <h4>Percent of votes recieved by each county's winning candidate</h4>
+            <div><span style="background-color: #6193c7"></span>Joe Biden</div>
+            <div><span style="background-color: #cf635d"></span>Donald Trump</div>
+        </div> -->
+    <!-- </div>
+</div> --> -->
+   
+
+    <script type='text/javascript' src="map.js"></script>
+</body>
+</html>
